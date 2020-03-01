@@ -1,0 +1,9 @@
+# 02/27/2020 Multiple Linear Regression
+
+We have finished a nice book.
+
+## Model Selection
+
+- How many 
+
+### Advertising data
