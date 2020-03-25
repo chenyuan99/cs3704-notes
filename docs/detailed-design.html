@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Applications | CS3704 Notes</title>
+  <title>Chapter 7 Detailed Design | CS3704 Notes</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Applications | CS3704 Notes" />
+  <meta property="og:title" content="Chapter 7 Detailed Design | CS3704 Notes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="chenyuan99/cs3704-notes" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Applications | CS3704 Notes" />
+  <meta name="twitter:title" content="Chapter 7 Detailed Design | CS3704 Notes" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="methods.html"/>
-<link rel="next" href="multiple-linear-regression.html"/>
+<link rel="prev" href="multiple-linear-regression.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -116,24 +116,172 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="applications" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Applications</h1>
-<p>Some <em>significant</em> applications are demonstrated in this chapter.</p>
-<div id="example-one" class="section level2">
-<h2><span class="header-section-number">5.1</span> Example one</h2>
-</div>
-<div id="example-two" class="section level2">
-<h2><span class="header-section-number">5.2</span> Example two</h2>
+<div id="detailed-design" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Detailed Design</h1>
+<ul>
+<li>Overview
+<ul>
+<li>What is detailed design?</li>
+<li>What is OO design?</li>
+<li>How should we do OO design?</li>
+</ul></li>
+<li>Detailed design
+<ul>
+<li>To decompose subsystems into modules</li>
+<li>Two approaches of decomposition
+<ul>
+<li>Procedual</li>
+<li>System is decompose</li>
+<li>Object-oriented</li>
+</ul></li>
+</ul></li>
+<li>Abstraction
+<ul>
+<li>To focus on important, inherent properties while suppressing unnecessary details
+<ul>
+<li>Permits separation of concern</li>
+<li>Allows postponements</li>
+</ul></li>
+<li>Two abstraction mechanisms
+<ul>
+<li>Procedural abstraction
+<ul>
+<li>Specification describes input/output</li>
+<li>Implementation describes algorithm</li>
+</ul></li>
+<li>Data abstraction
+<ul>
+<li>Specification describes attributes, values</li>
+<li>Implementation describes representation and
+manipulation</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>OOD
+<ul>
+<li>To identify responsibilities and assign them to classes and objects</li>
+<li>Responsibility for doing
+<ul>
+<li>E.g., create an object, perform calculations, invoking operations on other objects
+Responsibilities for knowing
+<ul>
+<li>E.g., attributes, data involved in calculations, parameters when invoking operations</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>How Do developers Design Objects?
+<ul>
+<li>Code
+<ul>
+<li>Draw, then code
+<ul>
+<li>UML Diagrams</li>
+</ul></li>
+<li>Only draw
+<ul>
+<li>The tool generates everything from diagrams</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>How much time spent drawing UML before coding?
+<ul>
+<li>Spend a few hours or at most one day (with partners) near</li>
+<li>Draw uml for the hard, creative parts of the detailed object design</li>
+<li>Stop and transition to coding</li>
+<li>UML drawings
+<ul>
+<li>Inspiration as a starting point</li>
+<li>The final design in code may diverge and improve</li>
+</ul></li>
+</ul></li>
+<li>Detailed design resultes
+<ul>
+<li>Dynamic models
+<ul>
+<li>Help design the logic/behavior of the code</li>
+<li>UML interaction diagrams</li>
+</ul></li>
+<li>Static models
+<ul>
+<li>Help design the definition of packages, class names, attributes, and method signatures</li>
+<li>(detailed) UML class diagrams</li>
+</ul></li>
+</ul></li>
+<li>UML Interaction Diagrams
+<ul>
+<li>To illustrate how objects interact via messages</li>
+<li>Two types of interaction diagrams
+<ul>
+<li>Communication diagram</li>
+<li>Sequence diagram
+<ul>
+<li>Illustrate interactions in akind of fence format, in which each new object is added</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>How should we do OO Design
+<ul>
+<li>Responsibility-driven</li>
+</ul></li>
+<li>Responsibilities
+<ul>
+<li>Obligations/behaviors</li>
+</ul></li>
+<li>Doing Responsibiliities
+<ul>
+<li>Doing something itself</li>
+</ul></li>
+<li>Guideline
+<ul>
+<li>The transition of responsibilities into classes and methods is influenced by the gra</li>
+</ul></li>
+<li>Knowing responsibilities
+<ul>
+<li>Knowing about private encapsulated data</li>
+<li>Knowing related objects</li>
+<li>Knowing about things it can derive of calcualate
+<ul>
+<li>“a sale of ject”</li>
+</ul></li>
+</ul></li>
+<li>Guideline
+<ul>
+<li>The attributes and associations illuatrats=ed by domain objects</li>
+</ul></li>
+<li>GRASP:
+<ul>
+<li>Principles
+<ul>
+<li>Creator(doing)
+<ul>
+<li>Problem: who creates an A?</li>
+<li>Advice: Assign class B the responsibility to create an instance of class A if:
+<ul>
+<li>B “contains” or compositely aggregates A</li>
+<li>Whole-part; assembly</li>
+</ul></li>
+</ul></li>
+<li>Information expert</li>
+<li>Low coupling</li>
+<li>Controller</li>
+<li>High cohesion</li>
+</ul></li>
+</ul></li>
+<li>Sequence vs communication</li>
+<li>Summary
+<ul>
+<li>Object fullfill tasks using their info or the info of objects the</li>
+</ul></li>
+</ul>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="multiple-linear-regression.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="multiple-linear-regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -164,7 +312,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-detailed-design.Rmd",
 "text": "Edit"
 },
 "history": {
